@@ -1,21 +1,21 @@
-# DHis 20 Anos - Máscaras
+# DHis 20 Anos - Docs
 
 ## Arduino
 
 ### Configuração
 
-O Array `buttonPins` contém a ordem da leitura dos pinos digitais do Arduino. Para esta instalação, a primeira porta é `D02` e a última `D09`. Comentários na mesma linha indicam a qual botão(1 a 8) eles se referem.
+O Array `buttonPins` contém a ordem da leitura dos pinos digitais do Arduino. Para esta instalação, a primeira porta recomendada é `D04` e a última `D11`. Comentários na mesma linha indicam a qual botão(1 a 8) eles se referem.
 
 ```cpp
 const uint8_t buttonPins[N_BUTTONS] = {
-  2,  // Botao 1
-  3,  // Botao 2
-  4,  // Botao 3
-  5,  // Botao 4
-  6,  // Botao 5
-  7,  // Botao 6
-  8,  // Botao 7
-  9   // Botao 8
+  4,  // Botao 1
+  5,  // Botao 2
+  6,  // Botao 3
+  7,  // Botao 4
+  8,  // Botao 5
+  9,  // Botao 6
+  10, // Botao 7
+  11  // Botao 8
 };
 ```
 
@@ -32,30 +32,21 @@ A ordem dos botões pode ser definida livremente.
 
 ### Configuração
 
-As configurações do app são feitas a partir de um arquivo XML dentro da pasta data, chamado `config.xml`. Ele possui o nó que engloba toda a aplicação, `App`, e seus filhos, um para cada uma das 8 faces, usando a tag com auto fechamento `face`.
+As configurações do app são feitas a partir de um arquivo XML dentro da pasta data, chamado `config.xml`. Ele possui o nó que engloba toda a aplicação, `App`, e seus filhos, um para cada uma dos 8 vídeos, usando a tag com auto fechamento `video`.
 
 ```xml
 <App
-    paddingL="50"
-    paddingT="50"
-    videoW="100"
-    videoH="200"
-    videoSpacingH="250"
-    videoSpacingV="300"
     fadeTime="2000"
-    arduinoPort="COM3"
+    arduinoPort="COM4"
     baudrate="115200"
     fullscreen="true"
 >
-    <face file="Alan_Ribeiro.mp4"/>
-    <face file="Anderson_Buda.mp4"/>
-    <face file="Bruno_Rangel.mp4"/>
-    <face file="Gilson.mp4"/>
-    <face file="Luciano.mp4"/>
-    <face file="Marcelo_Indio.mp4"/>
-    <face file="Marcio_Conceicao_Goncalves.mp4"/>
-    <face file="Nina_Monteiro.mp4"/>
-    <face file="Renato_Tona.mp4"/>
+    <video file="ANTROPOCRUZO - ABOUT THE EXHIBITION.mp4"/>
+    <video file="ANTROPOCRUZO DOCUMENTARY.mp4"/>
+    <video file="Documentario da Oficina Grande Rio 2025.mp4"/>
+    <video file="TEASER CARNAVAL 2023.mp4"/>
+    <video file="Evento DESIGN, BATE-BOLAS E BATE-BOLETES Cultura em Movimento.mp4"/>
+    <video file="Documentario da Oficina Grande Rio 2022.mp4"/>
 </App>
 ```
 
@@ -63,18 +54,12 @@ Atributos da tag `App`:
 
 | Atributo | Tipo | Função |
 | --- | --- | --- |
-| `paddingL` | int | Espaço entre a borda esquerda da tela e os vídeos |
-| `paddingT` | int | Espaço entre a borda superior da tela e os vídeos |
-| `videoW` | int | Largura do vídeo |
-| `videoH` | int | Altura do vídeo |
-| `videoSpacingH` | int | Espaço horizontal entre o início de um vídeo(sua posição X) e o início de outro |
-| `videoSpacingV` | int | Espaço vertical entre o início de um vídeo(sua posição Y) na primeira linha e o início de outro na segunda linha |
 | `fadeTime` | int | Tempo em milissegundos de transição dos vídeos |
 | `arduinoPort` | string | Nome da porta do arduino, como, por exemplo, `COM3` ou `/dev/cu.usbmodemXXXX` |
 | `baudrate` | int | Taxa de comunicação serial do Arduino |
 | `fullscreen` | bool | Define se o programa inicia em modo tela cheia ou não |
 
-Atributos da tag `face`:
+Atributos da tag `video`:
 
 | Atributo | Tipo | Função |
 | --- | --- | --- |
@@ -84,7 +69,7 @@ Atributos da tag `face`:
 > O nome dos arquivos não devem conter caracteres especiais, apenas letras maiúsculas e minúsculas, espaços, `-`, `_` e números.
 
 > [!TIP]
-> A ordem das tags `face` define a ordem dos vídeos, a primeira linha com os vídeos de 1 a 4 da esquerda para a direita e a segunda linha com os vídeos 5 a 8.
+> A ordem das tags `video` define a ordem dos vídeos nos botões.
 
 ### Mapa de atalhos
 
