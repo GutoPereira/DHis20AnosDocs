@@ -1,0 +1,14 @@
+<App
+    fadeTime="2000"
+    arduinoPort="COM4"
+    baudrate="115200"
+    fullscreen="true"
+>
+    <!-- Ordem: video 1, video 2, ... ate video 8. fadeTime em milissegundos por fade. -->
+    <video file="ANTROPOCRUZO - ABOUT THE EXHIBITION.mp4"/>
+    <video file="ANTROPOCRUZO DOCUMENTARY.mp4"/>
+    <video file="Documentario da Oficina Grande Rio 2025.mp4"/>
+    <video file="TEASER CARNAVAL 2023.mp4"/>
+    <video file="Evento DESIGN, BATE-BOLAS E BATE-BOLETES Cultura em Movimento.mp4"/>
+    <video file="Documentario da Oficina Grande Rio 2022.mp4"/>
+</App>
