@@ -28,6 +28,9 @@ A ordem dos botões pode ser definida livremente.
 
 ## App
 
+O App inicia sem nenhum vídeo tocar. Ao pressionar um dos botões da eletrônica ou uma das teclas de 1 a 6 do teclado, um vídeo inicia, fazendo transição a partir do preto. Caso qualquer tecla de 1 a 6 seja acionada, o vídeo transiciona para o preto, mas caso seja diferente da anterior, um novo vídeo se inicia. Quando o vídeo chega próximo ao fim, ele transiciona para preto novamente e o App espera outro ser acionado.
+
+
 ### Configuração
 
 As configurações do app são feitas a partir de um arquivo XML dentro da pasta data, chamado `config.xml`. Ele possui o nó que engloba toda a aplicação, `App`, e seus filhos, um para cada uma dos 8 vídeos, usando a tag com auto fechamento `video`.
