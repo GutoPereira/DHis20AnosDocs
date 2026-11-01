@@ -35,6 +35,9 @@ O App inicia sem nenhum vídeo tocar. Ao pressionar um dos botões da eletrônic
 . [VLC](https://www.videolan.org/) instalado.
 . [K-Lite CODEC Pack](https://www.codecguide.com/download_kl.htm) instalado.
 
+### Assets
+
+Os vídeos ficam dentro da pasta `/data/videos/`. Os arquivos devem preferencialmente ter a extensão `MP4` e usar o codec `H.264`.
 
 ### Configuração
 
