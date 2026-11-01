@@ -41,7 +41,7 @@ Os vídeos ficam dentro da pasta `/data/videos/`. Os arquivos devem preferencial
 
 ### Configuração
 
-As configurações do app são feitas a partir de um arquivo XML dentro da pasta data, chamado `config.xml`. Ele possui o nó que engloba toda a aplicação, `App`, e seus filhos, um para cada uma dos 8 vídeos, usando a tag com auto fechamento `video`.
+As configurações do app são feitas a partir de um arquivo XML dentro da pasta `/data/`, chamado `config.xml`. Ele possui o nó que engloba toda a aplicação, `App`, e seus filhos, um para cada uma dos 8 vídeos, usando a tag com auto fechamento `video`.
 
 ```xml
 <App
