@@ -30,6 +30,11 @@ A ordem dos botões pode ser definida livremente.
 
 O App inicia sem nenhum vídeo tocar. Ao pressionar um dos botões da eletrônica ou uma das teclas de 1 a 6 do teclado, um vídeo inicia, fazendo transição a partir do preto. Caso qualquer tecla de 1 a 6 seja acionada, o vídeo transiciona para o preto, mas caso seja diferente da anterior, um novo vídeo se inicia. Quando o vídeo chega próximo ao fim, ele transiciona para preto novamente e o App espera outro ser acionado.
 
+### Requisitos
+
+. [VLC](https://www.videolan.org/) instalado.
+. [K-Lite CODEC Pack](https://www.codecguide.com/download_kl.htm) instalado.
+
 
 ### Configuração
 
