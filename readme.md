@@ -14,8 +14,6 @@ const uint8_t buttonPins[N_BUTTONS] = {
   7,  // Botao 4
   8,  // Botao 5
   9,  // Botao 6
-  10, // Botao 7
-  11  // Botao 8
 };
 ```
 
