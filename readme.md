@@ -32,8 +32,8 @@ O App inicia sem nenhum vídeo tocar. Ao pressionar um dos botões da eletrônic
 
 ### Requisitos
 
-. [VLC](https://www.videolan.org/) instalado.
-. [K-Lite CODEC Pack](https://www.codecguide.com/download_kl.htm) instalado.
+- [VLC](https://www.videolan.org/) instalado.
+- [K-Lite CODEC Pack](https://www.codecguide.com/download_kl.htm) instalado.
 
 ### Assets
 
