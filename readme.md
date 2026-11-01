@@ -4,7 +4,7 @@
 
 ### Configuração
 
-O Array `buttonPins` contém a ordem da leitura dos pinos digitais do Arduino. Para esta instalação, a primeira porta recomendada é `D04` e a última `D11`. Comentários na mesma linha indicam a qual botão(1 a 8) eles se referem.
+O Array `buttonPins` contém a ordem da leitura dos pinos digitais do Arduino. Para esta instalação, a primeira porta recomendada é `D04` e a última `D09`. Comentários na mesma linha indicam a qual botão(1 a 6) eles se referem.
 
 ```cpp
 const uint8_t buttonPins[N_BUTTONS] = {
